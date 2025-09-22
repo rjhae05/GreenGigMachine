@@ -1,0 +1,34 @@
+GREEN_GIG_MACHINE/
+│
+├── model/                  
+│   └── model.tflite          # Trained TFLite model
+│
+├── training_dataset/         # Raw images for training
+│   ├── plastic/              # Plastic category
+│   │   ├── plastic1.jpg
+│   │   ├── plastic2.jpg
+│   │   └── ...
+│   ├── paper/                # Paper category
+│   │   ├── paper1.jpg
+│   │   ├── paper2.jpg
+│   │   └── ...
+│   └── other/ (optional)     # Other waste types
+│       ├── metal1.jpg
+│       └── ...
+│
+├── trained_dataset/          # Preprocessed or augmented images
+│   ├── plastic/
+│   ├── paper/
+│   └── other/
+│
+├── classify.py               # Run inference on image/camera
+├── retrain.py                # Script to retrain model
+├── requirements.txt          # Dependencies
+├── labels.txt                # List of classes (e.g., paper, plastic, other)
+├── environment.txt           # Virtual environment details
+├── README.md                 # Instructions
+│
+├── assets/ (optional)        # Example images for testing
+│   ├── testing.png
+│   ├── Paper1.jpg
+│   └── ...
